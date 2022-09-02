@@ -58,7 +58,7 @@ def predict():
             pred = 'This enslaved person is on the run, with %{:.2f} probability' .format(prob[0][1] * 100)
         else:
             pred = 'This enslaved person is incarcerated, with %{:.2f} probability' .format(prob[0][0] * 100)
-    return render_template('/prediction.html', prediction_text='{}'.format(str(text)),
+    return render_template('/prediction.html', prediction_text='{}'.format(str(text[0])),
                            prediction = '{}'.format(pred))
 
 if __name__ == "__main__":
