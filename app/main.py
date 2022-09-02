@@ -4,10 +4,10 @@ from sklearn.linear_model import LinearRegression
 from word2number import w2n
 
 app = Flask(__name__)
-with open('../models/cv_best_nb.pkl', 'rb') as f:
+with open('models/cv_best_nb.pkl', 'rb') as f:
     vect, clf = pickle.load(f)
     
-with open('../models/prediction_model.pkl', 'rb') as f1:
+with open('models/prediction_model.pkl', 'rb') as f1:
     prediction_clf = pickle.load(f1)
     
 def str_to_num(s):
