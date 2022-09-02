@@ -1,0 +1,7 @@
+gunicorn
+flask
+re
+nltk
+pickle
+sklearn
+word2number

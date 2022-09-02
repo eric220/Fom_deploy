@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>FOM Predictor</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+    <h5>Enter Text Data</h5>
+    <form action="{{url_for('predict')}} "method="post" name='text_input'>
+      <textarea id="confirmationText" class="text" cols="86" rows ="10" name='text_input'></textarea>
+       <button type="submit" class="btn btn-primary btn-block btn-large">Get Prediction</button>
+    </form>
+
+
+   <br>
+   <br>
+   {{prediction_text}}
+ </div>
+</body>
+</html>
