@@ -1,6 +1,5 @@
 gunicorn
 flask
 nltk
-pickle
 sklearn
 word2number
